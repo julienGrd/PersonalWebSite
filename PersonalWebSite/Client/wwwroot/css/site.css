@@ -85,7 +85,8 @@
         margin-bottom: 3px; }
       .body .cv-container .cv-content .resume {
         font-size: 13px;
-        text-align: justify; }
+        text-align: justify;
+        padding: 2px; }
       .body .cv-container .cv-content .langue-bloc {
         display: flex; }
         .body .cv-container .cv-content .langue-bloc .country {
