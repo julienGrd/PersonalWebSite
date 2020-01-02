@@ -1,0 +1,76 @@
+﻿@inherits LayoutComponentBase
+    <MatThemeProvider Theme="@theme">
+        <MatAppBar Class="mat">
+            <MatAppBarRow>
+                <MatAppBarSection>
+                    @*<MatIconButton Icon="menu"></MatIconButton>*@
+
+                    <MatAppBarTitle>Site web personnel</MatAppBarTitle>
+
+                    @*<MatIconButton Link="/resume">
+                        <i class="fas fa-id-card" aria-hidden="true">Resume</i>
+                    </MatIconButton>*@
+
+                    <MatButton Link="/resume" Unelevated="true">
+                        <i class="fas fa-id-card" aria-hidden="true">&nbsp;Resume</i>
+                    </MatButton>
+                    @*<MatIconButton Link="/resume">
+                        <i class="fas fa-id-card" aria-hidden="true"> Resume</i>
+                    </MatIconButton>*@
+                </MatAppBarSection>
+                <MatAppBarSection Align="@MatAppBarSectionAlign.End">
+
+                    <MatIconButton Link="/login" title="Login">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>
+                    </MatIconButton>
+                    <MatIconButton Link="https://github.com/julienGrd/" Target="_blank" title="Follow me on github">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </MatIconButton>
+                    @*<MatSelect Label="Pick a Food Group" @bind-Value="value1">
+                        <MatOptionString></MatOptionString>
+                        <MatOptionString Value="grains">Bread, Cereal, Rice, and Pasta</MatOptionString>
+                        <MatOptionString Value="vegetables">Vegetables</MatOptionString>
+                        <MatOptionString Value="fruit">Fruit</MatOptionString>
+                    </MatSelect>*@
+                </MatAppBarSection>
+            </MatAppBarRow>
+        </MatAppBar>
+        <MatDrawerContainer Style="width: 100vw; height: 100vh;" Class="mat">
+            <MatDrawerContent>
+                <MatAppBarAdjust></MatAppBarAdjust>
+                <div class="body">
+                    @Body
+                </div>
+            </MatDrawerContent>
+        </MatDrawerContainer>
+            @*<MatAppBarContent>
+                <div class="body">
+                    @Body
+                </div>
+            </MatAppBarContent>*@
+
+            <div class="footer">
+
+            </div>
+    </MatThemeProvider>
+    
+@code{
+     MatTheme theme = new MatTheme()
+        {
+            Primary = "#475C6F",
+            Secondary = MatThemeColors.BlueGrey._500.Value
+        };
+}
+@*<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>*@

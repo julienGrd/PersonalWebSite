@@ -1,0 +1,40 @@
+﻿@inherits PageCvViewModel
+@page "/resume"
+    <div class="cv-container">
+        <div class="cv-content mat-elevation-z10 display-content">
+            <div class="d-flex flex-row primary-background cv-header container-fluid">
+                <div class="row">
+                    <div class="col-xl-3">
+                        <div class="row">
+                            <div class="col-sm">
+                                <PersonalWebSite.Front.Components.Cv.CvPhotoWithInfo />
+                            </div>
+                            <div class="col-sm">
+                                <PersonalWebSite.Front.Components.Cv.CvTitle />
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-xl">
+                        <PersonalWebSite.Front.Components.Cv.CvAboutMe />
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-3 primary-background">
+                        <PersonalWebSite.Front.Components.Cv.CvLang />
+                        <PersonalWebSite.Front.Components.Cv.CvGraduate />
+                        <PersonalWebSite.Front.Components.Cv.CvHobbies />
+                    </div>
+                    <div class="col-sm">
+                        <PersonalWebSite.Front.Components.Cv.CvSkills />
+                        <PersonalWebSite.Front.Components.Cv.CvExperience />
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        
+    </div>
