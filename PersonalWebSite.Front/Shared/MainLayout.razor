@@ -1,88 +1,47 @@
 ﻿@inherits LayoutComponentBase
-    <MatThemeProvider Theme="@theme">
-        <MatAppBar Class="mat">
-            <MatAppBarRow>
-                <MatAppBarSection>
-                    @*<MatIconButton Icon="menu"></MatIconButton>*@
-                    <img src="images/photo.png" style="width: 60px; height: 60px" />
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/"><img src="images/photo.png" style="width: 60px; height: 60px" /></a>
+        <div class="d-flex flex-column ml-2">
+            <span class="title-menu">Julien Gourdon</span>
+            <span class="job">Développeur .NET/Web Fullstack</span>
+        </div>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item" title="">
+                    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All">
+                        <i class="fas fa-home" aria-hidden="true"></i>&nbsp;Accueil
+                    </NavLink>
+                </li>
+                <li class="nav-item" title="CV">
+                    <NavLink class="nav-link" href="/resume" Match="NavLinkMatch.All">
+                        <i class="fas fa-id-card" aria-hidden="true"></i>&nbsp;CV
+                    </NavLink>
+                </li>
+                <li class="nav-item" title="Connexion">
+                    <NavLink class="nav-link" href="/login" Match="NavLinkMatch.All">
+                        <i class="fas fa-user-circle" aria-hidden="true"></i>&nbsp;Connexion
+                    </NavLink>
+                </li>
+                <li class="nav-item" title="Follow me on github">
+                    <NavLink class="nav-link" href="https://github.com/julienGrd/" target="_blank" Match="NavLinkMatch.All">
+                        <i class="fab fa-github" aria-hidden="true"></i>&nbsp;Follow me on github
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
 
-                    <div class="d-flex flex-column ml-2">
-                        <span class="title-menu">Julien Gourdon</span>
-                        <span class="job">Développeur .NET/Web Fullstack</span>
-                    </div>
+    </nav>
+    <main role="main">
+        @Body
+    </main>
+    <footer>
 
-                    @*<MatIconButton Link="/resume">
-                <i class="fas fa-id-card" aria-hidden="true">Resume</i>
-            </MatIconButton>*@
-
-
-
-                    @*<MatIconButton Link="/resume">
-                <i class="fas fa-id-card" aria-hidden="true"> Resume</i>
-            </MatIconButton>*@
-                </MatAppBarSection>
-                <MatAppBarSection Align="@MatAppBarSectionAlign.End" Class="d-none d-sm-flex">
-                    <NavLink class="link-menu" Match="NavLinkMatch.All" href="/"><i class="fas fa-home" aria-hidden="true"></i></NavLink>
-                    <NavLink class="link-menu" Match="NavLinkMatch.All" href="/resume">Cv</NavLink>
-                    <NavLink class="link-menu" Match="NavLinkMatch.All" href="/login" title="Connexion"><i class="fas fa-user-circle" aria-hidden="true"></i></NavLink>
-                    <NavLink class="link-menu" Match="NavLinkMatch.All" href="https://github.com/julienGrd/" target="_blank" title="Follow me on github"> <i class="fab fa-github" aria-hidden="true"></i></NavLink>
-                    @*<MatButton Link="/resume" Unelevated="true">
-                CV
-            </MatButton>
-            <MatButton Link="/login" title="Login">
-                <i class="fas fa-user-circle" aria-hidden="true"></i>
-            </MatButton>*@
-                    @*<MatButton Link="https://github.com/julienGrd/" Target="_blank" title="Follow me on github">
-                <i class="fab fa-github" aria-hidden="true"></i>
-            </MatButton>*@
-                    @*<MatSelect Label="Pick a Food Group" @bind-Value="value1">
-                <MatOptionString></MatOptionString>
-                <MatOptionString Value="grains">Bread, Cereal, Rice, and Pasta</MatOptionString>
-                <MatOptionString Value="vegetables">Vegetables</MatOptionString>
-                <MatOptionString Value="fruit">Fruit</MatOptionString>
-            </MatSelect>*@
-                </MatAppBarSection>
-                <MatAppBarSection Align="@MatAppBarSectionAlign.End" Class="d-flex d-sm-none">
-                    <MatIconButton Icon="menu"></MatIconButton>
-                </MatAppBarSection>
-            </MatAppBarRow>
-        </MatAppBar>
-        <MatDrawerContainer Style="width: 100vw; height: 100vh;" Class="mat">
-            <MatDrawerContent>
-                <MatAppBarAdjust></MatAppBarAdjust>
-                <div class="body">
-                    @Body
-                </div>
-            </MatDrawerContent>
-        </MatDrawerContainer>
-            @*<MatAppBarContent>
-                <div class="body">
-                    @Body
-                </div>
-            </MatAppBarContent>*@
-
-            <div class="footer">
-
-            </div>
-    </MatThemeProvider>
+    </footer>
+    
+   
     
 @code{
-     MatTheme theme = new MatTheme()
-        {
-            Primary = "#243f58",
-            Secondary = MatThemeColors.BlueGrey._500.Value
-        };
 }
-@*<div class="sidebar">
-    <NavMenu />
-</div>
-
-<div class="main">
-    <div class="top-row px-4">
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-    </div>
-
-    <div class="content px-4">
-        @Body
-    </div>
-</div>*@

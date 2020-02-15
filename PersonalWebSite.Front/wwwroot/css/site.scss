@@ -1,46 +1,11 @@
 ﻿:root {
     --third-color: #456888;
-    
+    --primary: #243f58;
     --yellow: #F1C52E;
 }
 
 body {
-    .link-menu {
-        margin: 0.5rem;
-        font-size: 20px;
-        color: inherit;
-
-        &:hover {
-            color: var(--yellow);
-            text-decoration: inherit;
-        }
-
-        &.active {
-            color: var(--yellow);
-            border-bottom: 2px solid;
-        }
-    }
-
-    .title-menu {
-        font-size: 24px;
-        margin: 0;
-    }
-
-    .job {
-        font-size: 18px;
-    }
-
-    @media (max-width: 576px) {
-        .title-menu {
-            font-size: 18px;
-        }
-
-        .job {
-            font-size: 12px;
-        }
-    }
-
-    .mdc-top-app-bar--fixed-adjust {
+    /*.mdc-top-app-bar--fixed-adjust {
         padding-top: 64px !important;
     }
 
@@ -48,14 +13,74 @@ body {
         .mdc-top-app-bar__row {
             height: 64px !important;
         }
+    }*/
+    nav.navbar {
+        background-color: var(--primary);
+        color: var(--white);
+        border-bottom: 1px solid var(--third-color);
+        /*height: 64px;*/
+        padding: 0.2rem 0.2rem;
+        justify-content: flex-start;
+
+        .navbar-brand {
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }
+
+        .nav-item {
+            @media (max-width: 992px) {
+                margin-top: 0.4rem;
+            }
+
+            .nav-link {
+                /*margin: 0.5rem;
+            font-size: 20px;
+            color: inherit;*/
+                display: inline;
+                padding-bottom: 0.2rem;
+                margin-left: 0.3rem;
+                color: var(--white);
+
+
+                &:hover {
+                    color: var(--yellow);
+                    text-decoration: inherit;
+                }
+
+                &.active {
+                    color: var(--yellow);
+                    border-bottom: 2px solid;
+                }
+            }
+        }
+
+
+
+        .title-menu {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .job {
+            font-size: 18px;
+        }
+
+        @media (max-width: 576px) {
+            .title-menu {
+                font-size: 18px;
+            }
+
+            .job {
+                font-size: 12px;
+            }
+        }
     }
 
 
-    .body {
+    main {
         display: flex;
         min-width: 0;
-
-
+        /*margin-top: 64px;*/
         .cv-container {
             display: flex;
             flex-grow: 1;
@@ -71,7 +96,7 @@ body {
                 min-width: 0;
                 /*margin: 1rem;*/
                 .primary-background {
-                    background-color: var(--mdc-theme-primary);
+                    background-color: var(--primary);
                     color: var(--white);
                 }
 
@@ -126,6 +151,7 @@ body {
                 .photo-with-info {
                     /*display: flex;*/
                     padding-top: 5px;
+
                     .photo {
                         display: flex;
                     }
@@ -307,7 +333,7 @@ body {
 
                             .skills-part-title {
                                 display: block;
-                                background-color: var(--mdc-theme-primary);
+                                background-color: var(--primary);
                                 color: var(--white);
                                 font-size: 22px;
                                 text-align: center;
