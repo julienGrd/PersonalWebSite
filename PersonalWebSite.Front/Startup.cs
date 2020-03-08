@@ -1,14 +1,20 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PersonalWebSite.Business;
+using PersonalWebSite.Business.Model;
+using PersonalWebSite.Front.Services;
 
 namespace PersonalWebSite.Front
 {
@@ -27,7 +33,25 @@ namespace PersonalWebSite.Front
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+
+            // Add EF services to the services container.
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("SqlDbContext")));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
             //services.AddSingleton<WeatherForecastService>();
+
+            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            var supportedCultures = new List<CultureInfo> { new CultureInfo("fr"), new CultureInfo("en") };
+            services.Configure<RequestLocalizationOptions>(options =>
+            {
+                options.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");
+                options.SupportedUICultures = supportedCultures;
+            });
+
+            services.AddScoped<LanguageService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

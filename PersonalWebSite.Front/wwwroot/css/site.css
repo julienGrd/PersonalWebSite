@@ -7221,13 +7221,22 @@ body {
       display: inline;
       padding-bottom: 0.2rem;
       margin-left: 0.3rem;
-      color: var(--white); }
+      color: var(--white);
+      font-size: large; }
       body nav.navbar .nav-item .nav-link:hover {
         color: var(--yellow);
         text-decoration: inherit; }
       body nav.navbar .nav-item .nav-link.active {
         color: var(--yellow);
         border-bottom: 2px solid; }
+    body nav.navbar .nav-item .dropdown-menu {
+      background-color: var(--primary);
+      color: var(--white);
+      border-color: var(--white); }
+      body nav.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+        cursor: pointer;
+        background-color: var(--primary);
+        color: var(--yellow); }
     body nav.navbar .title-menu {
       font-size: 24px;
       margin: 0; }

@@ -54,7 +54,7 @@ body {
                 padding-bottom: 0.2rem;
                 margin-left: 0.3rem;
                 color: var(--white);
-
+                font-size: large;
 
                 &:hover {
                     color: var(--yellow);
@@ -64,6 +64,20 @@ body {
                 &.active {
                     color: var(--yellow);
                     border-bottom: 2px solid;
+                }
+            }
+
+            .dropdown-menu {
+                background-color: var(--primary);
+                color: var(--white);
+                border-color: var(--white);
+
+                .dropdown-item {
+                    &:hover {
+                        cursor: pointer;
+                        background-color: var(--primary);
+                        color: var(--yellow);
+                    }
                 }
             }
         }
