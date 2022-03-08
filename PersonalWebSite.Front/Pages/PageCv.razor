@@ -3,7 +3,13 @@
     <div class="cv-container">
         <div class="cv-content display-content">
             <div class="d-flex flex-column primary-background cv-header container-fluid">
-                <PersonalWebSite.Front.Components.Cv.CvPhotoWithInfo />
+               
+                <div class="d-flex">
+                    <div class="flex-grow-1">
+                         <PersonalWebSite.Front.Components.Cv.CvGeneralInfo />
+                    </div>
+                    <a title="Exporter en PDF" target="_blank" href="/download-cv"><i class="fa-solid fa-file-pdf"></i></a>
+                </div>
                 <PersonalWebSite.Front.Components.Cv.CvAboutMe />
             </div>
             <div class="container-fluid">

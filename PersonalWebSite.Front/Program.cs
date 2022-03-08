@@ -15,14 +15,19 @@ namespace PersonalWebSite.Front
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = BuildWebHost(args);
+            host.Run();
         }
 
-        public static IHostBuilder CreateHostBuilder(string[] args) =>
-            Host.CreateDefaultBuilder(args)
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseStartup<Startup>();
-                });
+        public static IWebHost BuildWebHost(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                //.ConfigureLogging(logging =>
+                //{
+                //    logging.ClearProviders();
+                //    logging.SetMinimumLevel(LogLevel.Trace);
+                //})
+                .UseStaticWebAssets()
+                .UseStartup<Startup>()
+                .Build();
     }
 }
