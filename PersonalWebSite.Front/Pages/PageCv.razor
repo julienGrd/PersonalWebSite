@@ -1,31 +1,32 @@
-﻿@inherits PageCvViewModel
-@page "/resume"
-    <div class="cv-container">
-        <div class="cv-content display-content">
-            <div class="d-flex flex-column primary-background cv-header container-fluid">
-               
-                <div class="d-flex">
-                    <div class="flex-grow-1">
-                         <PersonalWebSite.Front.Components.Cv.CvGeneralInfo />
-                    </div>
-                    <a title="Exporter en PDF" target="_blank" href="/download-cv"><i class="fa-solid fa-file-pdf"></i></a>
+﻿@page "/resume"
+@inherits CustomBaseComponent
+
+<div class="cv-container">
+    <div class="cv-content display-content">
+        <div class="d-flex flex-column primary-background cv-header container-fluid">
+
+            <div class="d-flex">
+                <div class="flex-grow-1">
+                    <PersonalWebSite.Front.Components.Cv.CvGeneralInfo />
                 </div>
-                <PersonalWebSite.Front.Components.Cv.CvAboutMe />
+                <a title="Exporter en PDF" style="    white-space: nowrap;" target="_blank" href="@($"/CV/cv_julien_gourdon_{LanguageService.GetCurrentLanguage().Localization}.pdf")"><i class="fa-solid fa-file-pdf"></i>&nbsp;Télécharger</a>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 primary-background">
-                        <PersonalWebSite.Front.Components.Cv.CvLang />
-                        <PersonalWebSite.Front.Components.Cv.CvGraduate />
-                        <PersonalWebSite.Front.Components.Cv.CvHobbies />
-                    </div>
-                    <div class="col-sm">
-                        <PersonalWebSite.Front.Components.Cv.CvSkills />
-                        <PersonalWebSite.Front.Components.Cv.CvExperience />
-                    </div>
-                </div>
-            </div>
-           
+            <PersonalWebSite.Front.Components.Cv.CvAboutMe />
         </div>
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 primary-background">
+                    <PersonalWebSite.Front.Components.Cv.CvLang />
+                    <PersonalWebSite.Front.Components.Cv.CvGraduate />
+                    <PersonalWebSite.Front.Components.Cv.CvHobbies />
+                </div>
+                <div class="col-sm">
+                    <PersonalWebSite.Front.Components.Cv.CvSkills />
+                    <PersonalWebSite.Front.Components.Cv.CvExperience />
+                </div>
+            </div>
+        </div>
+
     </div>
+
+</div>
