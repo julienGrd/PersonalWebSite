@@ -11295,12 +11295,17 @@ body main .cv-container .cv-content.display-content .title-about-me {
 body main .cv-container .cv-content.display-content .title-lang {
   margin-top: 0;
 }
+body main .cv-container .cv-content.display-content .right-part a {
+  color: var(--primary);
+}
 body main .cv-container .cv-content .fas, body main .cv-container .cv-content .fab {
   font-size: 14px;
 }
 body main .cv-container .cv-content .photo-with-info {
-  /*display: flex;*/
+  display: flex;
   padding-top: 5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 body main .cv-container .cv-content .photo-with-info .photo {
   display: flex;
