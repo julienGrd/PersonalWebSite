@@ -161,10 +161,22 @@ body {
                         display: flex;
                         padding: 8px;
                         flex-direction: column;
-                        max-width: 20rem;
+                        max-width: 18rem;
 
                         .photo-with-info {
                             margin-left: 6px;
+                        }
+
+                        .name {
+                            font-size: 22px;
+                        }
+
+                        .role {
+                            font-size: 18px;
+                        }
+
+                        .resume{
+                            font-size: 12px;
                         }
                     }
 
