@@ -11378,6 +11378,8 @@ body main .cv-container .cv-content .langue-bloc .country .progress-bar-containe
   line-height: 16px;
   height: 100%;
   padding-left: 2px;
+  align-items: center;
+  display: flex;
 }
 body main .cv-container .cv-content .diploma .school-timeline {
   flex-grow: 1;
