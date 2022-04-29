@@ -11138,6 +11138,7 @@ body {
   height: 100%;
   min-height: 0;
   display: flex;
+  flex-direction: column;
   /*.mdc-top-app-bar--fixed-adjust {
       padding-top: 64px !important;
   }
@@ -11167,7 +11168,7 @@ body nav.navbar {
   border-bottom: 1px solid var(--third-color);
   /*height: 64px;*/
   padding: 0.2rem 0.2rem;
-  justify-content: flex-start;
+  /*justify-content: flex-start;*/
 }
 body nav.navbar .navbar-brand {
   margin-left: 0.2rem;
@@ -11217,11 +11218,13 @@ body nav.navbar .job {
   font-size: 18px;
 }
 @media (max-width: 576px) {
-  body nav.navbar .title-menu {
-    font-size: 18px;
+  body nav.navbar {
+    /*.title-menu {
+        font-size: 18px;
+    }*/
   }
   body nav.navbar .job {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 body main {
@@ -11260,6 +11263,9 @@ body main .cv-container .cv-content.printable-content .left-part {
   padding: 8px;
   flex-direction: column;
   max-width: 20rem;
+}
+body main .cv-container .cv-content.printable-content .left-part .photo-with-info {
+  margin-left: 6px;
 }
 body main .cv-container .cv-content.printable-content .right-part {
   display: flex;
@@ -11547,4 +11553,14 @@ body #blazor-error-ui.dismiss {
   position: absolute;
   right: 0.75rem;
   top: 0.5rem;
+}
+
+@media print {
+  nav.navbar {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
 }
