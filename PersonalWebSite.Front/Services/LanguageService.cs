@@ -39,9 +39,9 @@ namespace PersonalWebSite.Front.Services
             return d ?? GetDefaults().First();
         }
 
-        public void SetLanguage(Language l)
-        {
-            CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture(l.Localization);
-        }
+        //public void SetLanguage(Language l)
+        //{
+        //    CultureInfo.CurrentUICulture = CultureInfo.CreateSpecificCulture(l.Localization);
+        //}
     }
 }
