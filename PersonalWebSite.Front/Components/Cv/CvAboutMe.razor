@@ -1,15 +1,8 @@
-﻿<div class="cv-title title-about-me">
-    <i class="fas fa-user"></i>&nbsp;Mon parcours
+﻿@inherits CustomBaseComponent
+@inject IStringLocalizer<CvAboutMe> L
+<div class="cv-title title-about-me">
+    <i class="fas fa-user"></i>&nbsp;@(L["MyJourney"])
 </div>
 <div class="left-part-bloc resume">
-    <p>Fort de 9 années d'expériences dans le développement d'applications, j'interviens depuis le début de l'année 2019 chez un petit éditeur de logiciel spécialisé dans la gestion de centres médicaux pour refondre complètement l'application existante qui se fait vieillissante. Je pars sur une stack technique totalement neuve (.NET6/blazor) pour profiter des dernières avancées dans le monde du web, j'en profite pour mettre en place une architecture et des principes de développements solides, l'objectif étant d'en faire une version maintenable pour les 15 prochaines années.</p>
-    <p>
-        Menant une vie de nomade depuis 7 ans, le télé-travail et la liberté dans mon mode d'intervention est non négociable si je dois travailler avec une entreprise. Je compense ces avantages par une forte expertise, une autonomie totale, et je peux me déplacer ponctuellement n'importe ou dans le monde si le besoin s'en fait sentir.
-    </p>
-    <p>
-        Je suis passionné par les technologies .NET depuis 2007, année où j'ai commencé mes études. Je suis compétent sur toute la chaîne technologique Microsoft, pour du développement d'applications et développement web général, du conseil technologique, du lead de projet technique, de la formation, de l'expertise.
-    </p>
-    <p>
-        J'aime le travail diversifié, de qualité, et les environnements de travail dynamique dans un esprit agile. Je tente systématiquement de produire un code modulaire, maintenable, documenté, le plus simple possible et respectueux des meilleures pratique et design pattern existants.
-    </p>
+    @((MarkupString)L["Journey"].ToString())
 </div>
