@@ -338,7 +338,6 @@ body {
                             padding-bottom: 10px;
                             margin: 0 auto;
                             padding: 2px;
-                            padding-bottom: 5px;
                             padding-top: 5px;
 
                             &:after {
@@ -354,6 +353,11 @@ body {
                                 border: 1px solid var(--yellow);
                                 margin-bottom: 8px;
                             }
+                        }
+
+                        .school-timeline-ets{
+                            font-size: 13px;
+                            font-style: italic;
                         }
                     }
                 }
@@ -448,8 +452,6 @@ body {
                     Main components 
 
                     -------------------------------- */
-
-
                     /*#cd-timeline {
                         position: relative;
                         padding: 2em 0;
@@ -466,7 +468,6 @@ body {
                         width: 4px;
                         background: #7E57C2;
                     }*/
-
                     /*@media only screen and (min-width: 1170px) {
                         #cd-timeline {
                             margin-top: 3em;
@@ -478,7 +479,6 @@ body {
                             margin-left: -2px;
                         }
                     }*/
-
                     /*.cd-timeline-block {
                         position: relative;
                         margin: 2em 0;
@@ -497,7 +497,6 @@ body {
                     .cd-timeline-block:last-child {
                         margin-bottom: 0;
                     }*/
-
                     /*@media only screen and (min-width: 1170px) {
                         .cd-timeline-block {
                             margin: 4em 0;
@@ -525,7 +524,6 @@ body {
                     .cd-timeline-img {
                         background: #673AB7;
                     }
-
                     /*@media only screen and (min-width: 1170px) {
                         .cd-timeline-img {
                             width: 30px;
@@ -533,13 +531,12 @@ body {
                             left: 50%;
                             margin-left: -15px;
                             margin-top: 15px;*/
-                            /* Force Hardware Acceleration in WebKit */
-                            /*-webkit-transform: translateZ(0);
+                    /* Force Hardware Acceleration in WebKit */
+                    /*-webkit-transform: translateZ(0);
                             -webkit-backface-visibility: hidden;
                         }
                     }*/
-
-                   /* .cd-timeline-content {
+                    /* .cd-timeline-content {
                         position: relative;
                         margin-left: 60px;
                         margin-right: 30px;
@@ -630,7 +627,6 @@ body {
                         position: absolute;
                         border-right: 7px solid #333C42;
                     }*/
-
                     /*@media only screen and (min-width: 768px) {
                         .cd-timeline-content h2 {
                             font-size: 20px;
@@ -875,7 +871,7 @@ h2 {
         margin: $spacing 0;
         border-radius: $bdrs;
         align-self: center;
-       /* width: 100vw;*/
+        /* width: 100vw;*/
 
         &:nth-child(2n + 1) {
             flex-direction: row-reverse;
@@ -942,11 +938,23 @@ h2 {
             font-weight: 600;
             background: $color1;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             white-space: nowrap;
             padding: 0 $spacing;
             border-radius: $bdrs 0 0 $bdrs;
+            text-align: center;
+
+            .timeline__event__date__lib {
+                border-bottom: 1px solid $color2;
+            }
+
+            .timeline__event__date__img {
+                flex-grow: 1;
+                display: flex;
+
+            }
         }
 
         &__icon {
@@ -998,6 +1006,10 @@ h2 {
 
         &__description {
             flex-basis: 60%;
+
+            > p {
+                margin-bottom: 0 !important;
+            }
         }
 
         &--type2 {
@@ -1078,6 +1090,14 @@ h2 {
             .timeline__event__icon {
                 &:before {
                     content: none;
+                }
+            }
+        }
+
+        &.timeline-geckos {
+            .timeline__event__icon {
+                &:before {
+                    /*height: 180px;  */
                 }
             }
         }

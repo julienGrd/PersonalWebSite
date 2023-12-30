@@ -117,4 +117,60 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="GeckosDate" xml:space="preserve">
+    <value>2019-2023 (5 years)</value>
+  </data>
+  <data name="GeckosDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+     &lt;li&gt;In charge of the technical migration of the software GECKOS, a management software specialized in the medical field (CMPP/CESSAD).&lt;/li&gt;
+     &lt;li&gt;Stack when I arrived: Visual studio 2010, .net framework 4.0, Silverlight, Wcf, Entity Framework 5&lt;/li&gt;
+     &lt;li&gt;Stack when I left: Visual studio 2022, .net 8, Blazor Server/Web assembly, CSS/SASS, REST API, Entity Framework Core 8&lt;/li&gt;
+     &lt;li&gt;Work in complete autonomy and remotely, in permanent contact with the company manager.&lt;/li&gt;
+     &lt;li&gt;Responsibilities: analysis and understanding of the existing system, definition of the architecture, implementation of quality standards, improvement of ergonomy, development of the entire application with the latest technologies in the web and .NET world&lt;/li&gt;
+     &lt;li&gt;2019: Rewriting the Silverlight front in blazor Server/Webassembly, synchronization of C# code between applications to allow parallel use of the two applications with the same code.&lt;/li&gt;
+     &lt;li&gt;2020: front finalization, still dependant of the old backend, progressive deployment to our clients&lt;/li&gt;
+     &lt;li&gt;2021: Progressive attempt to port the backend to .NET 7. Various functional improvements (electronic signatures, internal messaging/email system through the application, business alert systems)&lt;/li&gt;
+     &lt;li&gt;2022: Deep rewrite of the business and technical part to certify the Geckos software in SEGUR referencing (https://esante.gouv.fr/segur).&lt;/li&gt;
+     &lt;li&gt;2023: Finalization of porting the entire code, removal of the old application and its support, widespread deployment, gradual improvement of the old code&lt;/li&gt;
+ &lt;/ul&gt;</value>
+  </data>
+  <data name="GeckosSoftware" xml:space="preserve">
+    <value>Software Geckos</value>
+  </data>
+  <data name="GeckosTitle" xml:space="preserve">
+    <value>Permanent contract, .net/web Software Developper fullstack</value>
+  </data>
+  <data name="String" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String10" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value />
+  </data>
 </root>

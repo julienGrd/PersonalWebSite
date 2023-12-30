@@ -117,27 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="GeckosDate" xml:space="preserve">
-    <value>2019-2023 (5 ans)</value>
+  <data name="CvAngersUniversity" xml:space="preserve">
+    <value>Angers, School Chevrollier</value>
   </data>
-  <data name="GeckosDescription" xml:space="preserve">
-    <value>&lt;ul&gt;
-     &lt;li&gt;En charge de la refonte technique du logiciel GECKOS, progiciel de gestion spécialisé dans le domaine médical (CMPP/CESSAD).&lt;/li&gt;
-     &lt;li&gt;Stack à mon arrivé : Visual studio 2010, .net framework 4.0, Silverlight, Wcf, Entity Framework 5&lt;/li&gt;
-     &lt;li&gt;Stack à mon départ : Visual studio 2022, .net 8, Blazor Server/Web assembly, CSS/SASS, API REST, Entity Framework Core 8&lt;/li&gt;
-     &lt;li&gt;Travail en totale autonomie et à distance, en lien permanent avec le dirigeant de la société.&lt;/li&gt;
-     &lt;li&gt;Responsabilités : analyse et compréhension de l'existant, définition de l'architecture, mise en place des normes de qualités, amélioration de l'ergonomie, développement de l'intégralité de l'application avec les dernières avancées dans le monde web et .NET&lt;/li&gt;
-     &lt;li&gt;2019 : Réécriture du front Silverlight en blazor Server/Webassembly, synchronisation du code c# entre les applications pour permettre un utilisation en parallèle des deux application sur le même code.&lt;/li&gt;
-     &lt;li&gt;2020 : Fiabilisation du front, déploiement progressif chez nos de client&lt;/li&gt;
-     &lt;li&gt;2021 : Tentative progressive de porter le backend en .NET 7. Améliorations fonctionelles diverses (signatures électronique, système de messagerie interne/mail à travers l'application, systèmes d'alertes métiers)&lt;/li&gt;
-     &lt;li&gt;2022 : Réécriture profonde de la partie métier et technique pour certifier le logiciel Geckos dans le référencement SEGUR (https://esante.gouv.fr/segur).&lt;/li&gt;
-     &lt;li&gt;2023 : Finalisation du portage de l'intégralité du code, abandon de l'ancienne application et de son support, déploiement généralisé, amélioration progressive de l'ancien code&lt;/li&gt;
- &lt;/ul&gt;</value>
+  <data name="CvBts" xml:space="preserve">
+    <value>BTEC of Computer Science</value>
   </data>
-  <data name="GeckosSoftware" xml:space="preserve">
-    <value>Logiciel Geckos</value>
+  <data name="CvDiplome" xml:space="preserve">
+    <value>Diplomas</value>
   </data>
-  <data name="GeckosTitle" xml:space="preserve">
-    <value>CDI Développeur .net/web fullstack</value>
+  <data name="CvLicence" xml:space="preserve">
+    <value>Bachelor of Computer Science</value>
+  </data>
+  <data name="CvMaster" xml:space="preserve">
+    <value>Master of Computer Science</value>
+  </data>
+  <data name="CvNantesUniversity" xml:space="preserve">
+    <value>Nantes University of sciences</value>
   </data>
 </root>
