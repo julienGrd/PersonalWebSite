@@ -1,0 +1,47 @@
+﻿<div class="timeline__event animated fadeInUp delay-2s @Type timeline-geckos">
+    <div class="timeline__event__header">
+        <div class="timeline__event__icon ">
+            @* <i class="lni-cake"></i> *@
+            <img src="@Icon" style="width: 50px" />
+        </div>
+        <div class="timeline__event__date">
+            <div class="timeline__event__date__lib">
+                @Company<br />
+                @Software<br />
+                @Date
+            </div>
+            <div class="timeline__event__date__img">
+                @Icons
+            </div>
+
+        </div>
+    </div>
+
+    <div class="timeline__event__content ">
+        <div class="timeline__event__title">
+            @Title
+        </div>
+        <div class="timeline__event__description">
+            @((MarkupString)Description.ToString())
+        </div>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public string Type { get; set; }
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public string Company { get; set; } 
+    [Parameter]
+    public string Software { get; set; }
+    [Parameter]
+    public string Date { get; set; }
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Description { get; set; }
+
+    [Parameter]
+    public RenderFragment Icons { get; set; }
+}

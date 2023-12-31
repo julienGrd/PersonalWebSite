@@ -10,6 +10,8 @@ namespace PersonalWebSite.Front.Model
         public string Name { get; set; }
         public string Localization { get; set; }
 
+        public string Linkedin_Localization { get; set; }
+
         public string Icon { get; set; }
     }
 }

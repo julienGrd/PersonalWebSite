@@ -117,6 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CteasyDate" xml:space="preserve">
+    <value>2016-2018 (3 years)</value>
+  </data>
+  <data name="CteasyDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+
+&lt;li&gt;Working with client on his digital strategy. analysis of needs, costing and developments of successives
+versions. I worked in association with another freelance, who dealing more with project management
+and part of architecture.&lt;/li&gt;
+&lt;li&gt;2016 : V3 development : Rewrited website in the CMS Umbraco and upgrade to asp .net MVC.
+Developed purchase funnel in SPA logic. Developed an angularJs backend website for CTEasy
+customer service. Implementation of a multi-provider planning management to take appointment
+directly on the website.&lt;/li&gt;
+&lt;li&gt;2017 : V4 development : Complete rewrite of the business layer for maintainability, performance and
+quality of service. Sanitation of the database. Integration of payment directly in the purchase funnel.
+Automatic payment of centers with generation of a daily transfer file. Traceability of all financial
+transactions. Redesign log, mail and sms system. Total graphic redesign.&lt;/li&gt;
+&lt;li&gt;2018 : V5 development : Complete rewrite of the logic of offers of the website by implementating
+yield management logic. Algorithm for calculating the planning rendered to customers with prices
+according to the yield management model associated with the center. Offline mode operation, with
+synchronization of free slots and taken in the background, or by webHook fire by the planners.
+Evolution of the angular back-end to be able to manipulate complex sales models associated with
+each center. Opening the system to manage multiple vehicle types and energies. performance optimisation on research page for SEO reasons. New design and
+ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/li&gt;
+
+&lt;/ul&gt;</value>
+  </data>
+  <data name="CteasySoftware" xml:space="preserve">
+    <value>E-commerce platform</value>
+  </data>
+  <data name="CteasyTitle" xml:space="preserve">
+    <value>Freelance, .net/web Software Developper fullstack</value>
+  </data>
   <data name="GeckosDate" xml:space="preserve">
     <value>2019-2023 (5 years)</value>
   </data>
@@ -139,38 +172,5 @@
   </data>
   <data name="GeckosTitle" xml:space="preserve">
     <value>Permanent contract, .net/web Software Developper fullstack</value>
-  </data>
-  <data name="String" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String1" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String10" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String2" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String3" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String4" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String5" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String6" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String7" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String8" xml:space="preserve">
-    <value />
-  </data>
-  <data name="String9" xml:space="preserve">
-    <value />
   </data>
 </root>

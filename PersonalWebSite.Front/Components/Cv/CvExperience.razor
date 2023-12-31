@@ -1,82 +1,89 @@
 ﻿@inject IStringLocalizer<CvExperience> L
 
 <div class="timeline">
-    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1 timeline-geckos">
-        <div class="timeline__event__icon ">
-            @* <i class="lni-cake"></i> *@
-            <img src="/images/geckos.png" style="width: 50px" />
-        </div>
-        <div class="timeline__event__date">
-            <div class="timeline__event__date__lib">
-                Informatique Service 34<br />
-                @(L["GeckosSoftware"])<br />
-                @(L["GeckosDate"])<br />
+    @if (IncludeFirst)
+    {
+        <CvExperienceItem Company="Informatique Service 34"
+                          Date="@(L["GeckosDate"])"
+                          Software="@(L["GeckosSoftware"])"
+                          Icon="/images/geckos.png"
+                          Title="@(L["GeckosTitle"])"
+                          Type="timeline__event--type1"
+                          Description="@L["GeckosDescription"]">
+            <Icons>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
+                    <img src="/images/techno/csharp.png" style="width: 50px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/sql_server.png" style="width: 100px" />
+                    <img src="/images/techno/blazor.png" style="width: 100px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/bootstrap.png" style="width: 50px" />
+                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
+                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
+                </div>
+            </Icons>
+        </CvExperienceItem>
+    }
+    @if (IncludeOthers)
+    {
+        <CvExperienceItem Company="Cteasy"
+                          Date="@(L["CteasyDate"])"
+                          Software="@(L["CteasySoftware"])"
+                          Icon="/images/cteasy.png"
+                          Title="@(L["CteasyTitle"])"
+                          Type="timeline__event--type2"
+                          Description="@L["CteasyDescription"]">
+            <Icons>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
+                    <img src="/images/techno/csharp.png" style="width: 50px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/sql_server.png" style="width: 100px" />
+                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/angular.png" style="width: 100px" />
+                    
+                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
+                </div>
+            </Icons>
+        </CvExperienceItem>
 
-            </div>
-            <div class="timeline__event__date_img">
-            </div>
-            
-        </div>
-        <div class="timeline__event__content ">
-            <div class="timeline__event__title">
-                @(L["GeckosTitle"])
-            </div>
-            <div class="timeline__event__description">
-                @((MarkupString)L["GeckosDescription"].ToString())
-            </div>
-        </div>
-    </div>
-    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
-        <div class="timeline__event__icon">
-            @* <i class="lni-burger"></i> *@
-            <img src="/images/cteasy.png" style="width: 50px" />
-        </div>
-        <div class="timeline__event__date">
-            20-08-2019
-        </div>
-        <div class="timeline__event__content">
-            <div class="timeline__event__title">
-                Lunch
-            </div>
-            <div class="timeline__event__description">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
-            </div>
-        </div>
-    </div>
-    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
-        <div class="timeline__event__icon">
-            <i class="lni-slim"></i>
+        <CvExperienceItem Company="C2i Solutions"
+                          Date="@(L["CteasyDate"])"
+                          Software="@(L["CteasySoftware"])"
+                          Icon="/images/c2i.png"
+                          Title="@(L["CteasyTitle"])"
+                          Type="timeline__event--type3"
+                          Description="@L["CteasyDescription"]">
+            <Icons>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
+                    <img src="/images/techno/csharp.png" style="width: 50px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/sql_server.png" style="width: 100px" />
+                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
+                </div>
+                <div class="timeline__event__date__img__block mt-2">
+                    <img src="/images/techno/angular.png" style="width: 100px" />
 
-        </div>
-        <div class="timeline__event__date">
-            20-08-2019
-        </div>
-        <div class="timeline__event__content">
-            <div class="timeline__event__title">
-                Exercise
-            </div>
-            <div class="timeline__event__description">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
-            </div>
-
-        </div>
-    </div>
-    <div class="timeline__event animated fadeInUp timeline__event--type1">
-        <div class="timeline__event__icon">
-            <i class="lni-cake"></i>
-
-        </div>
-        <div class="timeline__event__date">
-            20-08-2019
-        </div>
-        <div class="timeline__event__content">
-            <div class="timeline__event__title">
-                Birthday
-            </div>
-            <div class="timeline__event__description">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, nam! Nam eveniet ut aliquam ab asperiores, accusamus iure veniam corporis incidunt reprehenderit accusantium id aut architecto harum quidem dolorem in!</p>
-            </div>
-        </div>
-    </div>
+                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
+                </div>
+            </Icons>
+        </CvExperienceItem>
+    }
+  
+    
 
 </div>
+@code{
+    [Parameter]
+    public bool IncludeFirst{get;set;}
+    [Parameter]
+    public bool IncludeOthers { get; set; }
+}

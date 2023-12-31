@@ -22,13 +22,15 @@ namespace PersonalWebSite.Front.Services
             {
                 Localization = "en",
                 Name = _l["NameEn"],
-                Icon = "uk.png"
+                Icon = "uk.png",
+                Linkedin_Localization = "en_US"
             };
             yield return new Language()
             {
                 Localization = "fr",
                 Name = _l["NameFr"],
-                Icon = "france.png"
+                Icon = "france.png",
+                Linkedin_Localization = "fr_FR"
             };
             
         }
