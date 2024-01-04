@@ -134,7 +134,7 @@ d’un fichier de virement journalier. Traçabilité de l’intégralité des mo
 génération comptable automatisé (FEC). Refonte de la gestion des logs, de l’envoie mail et sms.
 Refonte graphique totale.&lt;/li&gt;
 &lt;li&gt;2018 : Développement V5. Refonte complète de la logique d’offres proposés sur le site via la mise
-en place du revenue management.Algorithme de de calcul du planning proposé aux clients et des
+en place du revenue management. Algorithme de calcul du planning proposé aux clients et des
 tarifs portés par les créneaux horaires en fonction du modèle de Revenue Management associé au
 centre. Fonctionnement en mode déconnectés avec synchronisation des créneaux libres et pris en
 arrière plan ou par webHook en fonction des planificateurs. Évolution du back-end angular pour

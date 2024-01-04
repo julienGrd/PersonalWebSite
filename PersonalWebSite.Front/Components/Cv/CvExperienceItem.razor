@@ -1,10 +1,10 @@
-﻿<div class="timeline__event animated fadeInUp delay-2s @Type timeline-geckos">
-    <div class="timeline__event__header">
+﻿<div class=" @CssClass timeline__event animated fadeInUp delay-2s @Type timeline-geckos">
+    <div class="timeline__event__header d-none d-lg-flex">
         <div class="timeline__event__icon ">
             @* <i class="lni-cake"></i> *@
             <img src="@Icon" style="width: 50px" />
         </div>
-        <div class="timeline__event__date">
+       @*  <div class="timeline__event__date">
             <div class="timeline__event__date__lib">
                 @Company<br />
                 @Software<br />
@@ -14,10 +14,26 @@
                 @Icons
             </div>
 
-        </div>
+        </div> *@
     </div>
 
-    <div class="timeline__event__content ">
+    <div class="timeline__event__content container-fluid">
+        <div class="timeline__event__main__title row">
+            @* <div class="row">
+                <div class="col">
+
+                </div>
+            </div> *@
+            <div class="col-6 d-lg-none m-auto">
+                <div class=" timeline__event__icon">
+                    <img src="@Icon" style="width: 40px" />
+                </div>
+                
+            </div>
+            <div class="col-6 col-xl-4 m-auto">@Company</div>
+            <div class="col-12 col-sm-6 col-xl-4 m-auto">@Software</div>
+            <div class="col-12 col-sm-6 col-xl-4 m-auto">@Date</div>
+        </div>
         <div class="timeline__event__title">
             @Title
         </div>
@@ -41,6 +57,8 @@
     public string Title { get; set; }
     [Parameter]
     public string Description { get; set; }
+    [Parameter]
+    public string CssClass { get; set; }
 
     [Parameter]
     public RenderFragment Icons { get; set; }

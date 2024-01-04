@@ -3,56 +3,29 @@
 <div class="timeline">
     @if (IncludeFirst)
     {
-        <CvExperienceItem Company="Informatique Service 34"
+        <CvExperienceItem Company="Info. Service 34"
                           Date="@(L["GeckosDate"])"
                           Software="@(L["GeckosSoftware"])"
                           Icon="/images/geckos.png"
                           Title="@(L["GeckosTitle"])"
                           Type="timeline__event--type1"
                           Description="@L["GeckosDescription"]">
-            <Icons>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
-                    <img src="/images/techno/csharp.png" style="width: 50px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/sql_server.png" style="width: 100px" />
-                    <img src="/images/techno/blazor.png" style="width: 100px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/bootstrap.png" style="width: 50px" />
-                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
-                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
-                </div>
-            </Icons>
         </CvExperienceItem>
     }
     @if (IncludeOthers)
     {
-        <CvExperienceItem Company="Cteasy"
+        <CvExperienceItem Company="Cteasy.com"
                           Date="@(L["CteasyDate"])"
+                          CssClass="pagebreak"
                           Software="@(L["CteasySoftware"])"
                           Icon="/images/cteasy.png"
                           Title="@(L["CteasyTitle"])"
                           Type="timeline__event--type2"
                           Description="@L["CteasyDescription"]">
             <Icons>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
-                    <img src="/images/techno/csharp.png" style="width: 50px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/sql_server.png" style="width: 100px" />
-                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/angular.png" style="width: 100px" />
-                    
-                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
-                </div>
+               
             </Icons>
         </CvExperienceItem>
-
         <CvExperienceItem Company="C2i Solutions"
                           Date="@(L["CteasyDate"])"
                           Software="@(L["CteasySoftware"])"
@@ -60,21 +33,6 @@
                           Title="@(L["CteasyTitle"])"
                           Type="timeline__event--type3"
                           Description="@L["CteasyDescription"]">
-            <Icons>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/NET_logo.png" style="width: 50px" />
-                    <img src="/images/techno/csharp.png" style="width: 50px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/sql_server.png" style="width: 100px" />
-                    <img src="/images/techno/JavaScript-logo.png" style="width: 50px" />
-                </div>
-                <div class="timeline__event__date__img__block mt-2">
-                    <img src="/images/techno/angular.png" style="width: 100px" />
-
-                    <img src="/images/techno/html_css.jpg" style="width: 50px" />
-                </div>
-            </Icons>
         </CvExperienceItem>
     }
   
