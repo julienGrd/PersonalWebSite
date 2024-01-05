@@ -1,0 +1,33 @@
+﻿@inherits CustomBaseComponent
+@inject IStringLocalizer<CvGeneralInfo> L
+<div class="photo-with-info">
+    @*<div class="photo">
+            <img src="images/photo.png" style="width: 90px; height: 90px" />
+        </div>*@
+    <span class="age text-nowrap"><i class="fas fa-calendar-alt"></i>&nbsp;35 @L["Years"]</span>
+    @*<a href="tel:+33645126661" class="phone text-nowrap ms-1"><i class="fas fa-phone"></i>+33645126661</a>*@
+    <a href="mailto:jul.gourdon@gmail.com" class="mail text-nowrap"><i class="fas fa-at"></i>&nbsp;jul.gourdon@gmail.com</a>
+
+    <a href="https://www.linkedin.com/in/julien-gourdon-freelance/?locale=@LanguageService.GetCurrentLanguage().Linkedin_Localization" class="mail text-nowrap" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp;julien-gourdon-freelance</a>
+    <a href="https://github.com/julienGrd" class="mail text-nowrap" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;julienGrd</a>
+
+    @*<a class="skype text-nowrap" href="skype:julien.gourdon?add"><i class="fab fa-skype"></i>&nbsp;julien.gourdon</a>*@
+    @if (WithCvDownload)
+    {
+        <a class="ms-1" title="Exporter en PDF" style="white-space: nowrap" target="_blank" href="@($"/CV/cv_julien_gourdon_{LanguageService.GetCurrentLanguage().CultureInfo.TwoLetterISOLanguageName}.pdf")"><i class="fa-solid fa-file-pdf"></i>&nbsp;@L["Download"]</a>
+    }
+    @*<div class="info-photo">
+
+        <div class="first-line-info">
+
+
+        </div>
+
+
+    </div>*@
+</div>
+
+@code{
+    [Parameter]
+    public bool WithCvDownload { get; set; }
+}

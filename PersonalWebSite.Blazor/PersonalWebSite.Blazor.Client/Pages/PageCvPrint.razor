@@ -1,0 +1,27 @@
+﻿@page "/resume/print"
+<div class="cv-container">
+    <div class="cv-content printable-content">
+        <div class="left-part primary-background">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="images/photo.png" style="width: 60px; height: 60px" />
+                <CvGeneralInfo />
+            </div>
+            
+            <CvTitle />
+            <CvAboutMe />
+            <CvLang />
+            <CvGraduate />
+            <div class="pagebreak"> </div>
+            <CvSkills />
+            @*<PersonalWebSite.Front.Components.Cv.CvHobbies />*@
+        </div>
+        <div class="right-part">
+            <!--<span class="skills">Comp�tences</span>-->
+            @*<PersonalWebSite.Front.Components.Cv.CvSkills />*@
+            <CvExperience />
+
+        </div>
+    </div>
+    @* <p style="page-break-before: always"></p>
+    <PersonalWebSite.Front.Components.Cv.CvExperience IncludeFirst="false" IncludeOthers="true" /> *@
+</div>

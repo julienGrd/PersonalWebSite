@@ -1,0 +1,12 @@
+﻿@inherits CustomBaseComponent
+@inject IStringLocalizer<CvAboutMe> L
+<div class="cv-title title-about-me">
+    <i class="fas fa-user"></i>&nbsp;@(L["MyJourney"])
+</div>
+<div class="left-part-bloc resume">
+    @((MarkupString)L["Journey"].ToString())
+</div>
+
+@code{
+    
+}
