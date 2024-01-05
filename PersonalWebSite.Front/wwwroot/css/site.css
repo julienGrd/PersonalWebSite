@@ -12789,6 +12789,10 @@ h2 {
   padding-top: 3px;
   padding-bottom: 3px;
 }
+.timeline__event__content .timeline__event__main__title .sub-main-title {
+  margin: auto;
+  /*text-wrap: wrap;*/
+}
 .timeline__event__content .timeline__event__title {
   font-size: 1.2rem;
   line-height: 1.4;

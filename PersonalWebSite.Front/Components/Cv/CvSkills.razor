@@ -1,37 +1,6 @@
-﻿@*<div class="skills-containers">
-    <div class="skills-part-container-row">
-        <div class="skills-part-container-column">
-            <span class="skills-part-title">Fonctionnelles</span>
-            <div class="skills-cloud-container fonctionnal-skills" id="fonctionnal-skills">
-                <span class="cloud-word size-1">Gestion de planning</span>
-                <span class="cloud-word size-1">Gestion financi�res</span>
-                <span class="cloud-word size-1">e-commerce</span>
-                <span class="cloud-word size-1"></span>
-                <span class="cloud-word size-1"></span>
-                <span class="cloud-word size-1"></span>
-            </div>
-        </div>
-        <div class="skills-part-container-column">
-            <span class="skills-part-title">Organisationnelles</span>
-            <div class="skills-cloud-container" id="organisationnal-skills">
-            </div>
-        </div>
-    </div>
-    <div class="skills-part-container-row">
-        <div class="skills-part-container-column">
-
-            <div class="skills-cloud-container" id="technical-skills">
-
-            </div>
-            <span class="skills-part-title push-bottom">Techniques</span>
-        </div>
-    </div>
-    <div class="skills-title">
-        Compétences
-    </div>
-</div>*@
+﻿@inject IStringLocalizer<CvSkills> L
 <div class="cv-title">
-    <i class="fa-solid fa-code"></i>&nbsp;Compétences
+    <i class="fa-solid fa-code"></i>&nbsp;@L["Skills"]
 </div>
 <div class="skills-container">
     <img src="/images/techno/NET_logo.png" style="width: 50px" />
@@ -42,6 +11,9 @@
     <img src="/images/techno/blazor.png" style="width: 100px" />
     <img src="/images/techno/html_css.jpg" style="width: 80px" />
     <img src="/images/techno/microsoft-iis2928.jpg" style="width: 50px" />
+
+    <img src="/images/techno/dot-net-maui.png" style="width: 50px" />
+    <img src="/images/techno/wpf-logo-175.png" style="width: 50px" />
     
     @* <div class="timeline__event__date__img__block mt-2">
         <img src="/images/techno/NET_logo.png" style="width: 50px" />

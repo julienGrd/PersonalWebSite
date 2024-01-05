@@ -117,6 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="C2IDate" xml:space="preserve">
+    <value>2015 (7 months)</value>
+  </data>
+  <data name="C2IDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Backend development of an engine rules for calculating commissions paid by banks to advisors on financial movements of its customers.&lt;/li&gt;
+&lt;li&gt;Backend development of a module which import real commissions paid by banks, then development of matchmaking algorithm between real and theoretical commissions in order to highlighted gaps.&lt;/li&gt;
+&lt;li&gt;Development of frontend views summarizing the differences between theoretical commissions and real, and development of administrative and parameter views for manage calculation and import engines.&lt;/li&gt;
+&lt;li&gt;Site Industrialization: frameworks Harmonization. Redesign Razor pages / jquery to a logic SPA Knockout / WEB API. Establishment of good web and Object development practices. Construction of internal development framework. bootstrap design harmonization across the entire site.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="C2ISoftware" xml:space="preserve">
+    <value>Asset Monitoring</value>
+  </data>
+  <data name="C2ITitle" xml:space="preserve">
+    <value>Permanent contract, .net/web Software Developper fullstack</value>
+  </data>
   <data name="CteasyDate" xml:space="preserve">
     <value>2016-2018 (3 years)</value>
   </data>
@@ -150,6 +167,22 @@ ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/
   <data name="CteasyTitle" xml:space="preserve">
     <value>Freelance, .net/web Software Developper fullstack</value>
   </data>
+  <data name="ExpertimeDate" xml:space="preserve">
+    <value>2012-2013 (1 year)</value>
+  </data>
+  <data name="ExpertimeDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Development and maintenance fixed-price project evianchezvous.com (6 months) : development professionnal profile, SEO optimization, after project maintenance, OneClick SogenActif payment, redesign promo code functionality, several corrections/evolutions.&lt;/li&gt;
+&lt;li&gt;fixed-price project "partner spaces" for Ubifrance (3 months) : Writing specifications and implementation of back office/Front office architecture. Development of the back office allowing partner administrators to customize the front office, SSO authentication, public front office development&lt;/li&gt;
+&lt;li&gt;fixed-price project redesign and evolution of Hermes application for Cassidian, EADS group (3 months) : Technical migration of Weblogic/Servlet/Jsp/ActiveX to IIS/ASP .NET MVC 4/C#, Oracle database, Ui redesign&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="ExpertimeSoftware" xml:space="preserve">
+    <value>EvianChezVous, UbiFrance</value>
+  </data>
+  <data name="ExpertimeTitle" xml:space="preserve">
+    <value>Permanent contract, .net/web Software Developper fullstack</value>
+  </data>
   <data name="GeckosDate" xml:space="preserve">
     <value>2019-2023 (5 years)</value>
   </data>
@@ -171,6 +204,23 @@ ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/
     <value>Software Geckos</value>
   </data>
   <data name="GeckosTitle" xml:space="preserve">
+    <value>Permanent contract, .net/web Software Developper fullstack</value>
+  </data>
+  <data name="SopraDate" xml:space="preserve">
+    <value>2013-2015 (1y 7 months)</value>
+  </data>
+  <data name="SopraDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Rewriting Information system of the company Bouygues Immobilier, integration into the financial team (7 peoples)
+&lt;li&gt;October – December 2013 : Realization of user interface proof of concept, growing competence in the finance business area. Reading and analysis of frontend V0 specifications.
+&lt;li&gt;December 2013 – June 2014 : Front development manager and technical expert.
+&lt;li&gt;June – November 2014 : Integration in the general design team to feedback and continuous improvement of the internal framework of application, and diffusion of good development practices. V0 responsible for delivery of the module and ALM anomalies lifts by the customer. Studies V1 specification for futures developments.
+&lt;/ul&gt;</value>
+  </data>
+  <data name="SopraSoftware" xml:space="preserve">
+    <value>Opera project</value>
+  </data>
+  <data name="SopraTitle" xml:space="preserve">
     <value>Permanent contract, .net/web Software Developper fullstack</value>
   </data>
 </root>

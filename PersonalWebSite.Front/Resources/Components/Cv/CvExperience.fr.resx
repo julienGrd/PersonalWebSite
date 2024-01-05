@@ -117,6 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="C2IDate" xml:space="preserve">
+    <value>2015 (7 mois)</value>
+  </data>
+  <data name="C2IDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Développement de la solution AssetMonitoring, progiciel de gestion de patrimoine web et responsive destiné aux conseillers en gestion de patrimoine financier et aux clients de ceux-ci&lt;/li&gt;
+&lt;li&gt;Développement Backend d'un moteur de règles de calcul des commissions versées par les banques aux conseillers selon les mouvements financiers de ses clients. &lt;/li&gt;
+&lt;li&gt;Développement Backend d'un module d'import des commissions réelles versées par les banques, développement de l'algorithme de mise en relation des commissions réelles et théoriques pour y faire ressortir les écarts..&lt;/li&gt;
+&lt;li&gt;Développement frontend de vues synthétisant les divergences des commissions théoriques et réelles, et des vues d'administration et de paramétrage des moteurs de calcul et d'import des commissions.&lt;/li&gt;
+&lt;li&gt;Industrialisation du site : Harmonisation des frameworks. Refonte des pages Razor/jquery vers une logique SPA Knockout/WEB API. Mise en place des bonnes pratiques de développement Web et Objet. Construction du framework de développement interne. Harmonisation du design bootstrap sur l'ensemble du site.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="C2ISoftware" xml:space="preserve">
+    <value>Asset Monitoring</value>
+  </data>
+  <data name="C2ITitle" xml:space="preserve">
+    <value>CDI Développeur .net/web fullstack</value>
+  </data>
   <data name="CteasyDate" xml:space="preserve">
     <value>2016-2018 (3 ans)</value>
   </data>
@@ -148,6 +166,22 @@ de véhicule et énergies multiple.&lt;/li&gt;
   <data name="CteasyTitle" xml:space="preserve">
     <value>Freelance Développeur .net/web fullstack</value>
   </data>
+  <data name="ExpertimeDate" xml:space="preserve">
+    <value>2012-2013 (1 an)</value>
+  </data>
+  <data name="ExpertimeDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Projet d’évolution au forfait du site EvianChezVous.com/ TMA d’après-projet (6 mois) : Mise en place de l’intégration du profil professionnel, Optimisation du moteur SEO, TMA d’après projet,  paiement OneClick SogenActif, Refonte et évolution de la gestion des codes promotionnels, différentes corrections/évolutions.&lt;/li&gt;
+&lt;li&gt;Projet au forfait de développement des espaces Partenaire pour Ubifrance (3 mois) : Rédactions des spécifications et mise en place de l’architecture Back Office/Front office. Développement du back office permettant aux administrateurs partenaire de personnaliser le front office, authentification SSO, développement du front office public.&lt;/li&gt;
+&lt;li&gt;Projet au forfait de refonte et évolution de l’application Hermes pour Cassidian, groupe EADS (3 mois) : Migration de l’environnement Weblogic/Servlet/Jsp/ActiveX vers IIS/ASP .NET MVC 4/C#, base de données Oracle, Utilisation du framework infragistic IngniteUi, refonte graphique.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="ExpertimeSoftware" xml:space="preserve">
+    <value>EvianChezVous, UbiFrance</value>
+  </data>
+  <data name="ExpertimeTitle" xml:space="preserve">
+    <value>CDI Développeur .net/web fullstack</value>
+  </data>
   <data name="GeckosDate" xml:space="preserve">
     <value>2019-2023 (5 ans)</value>
   </data>
@@ -169,6 +203,23 @@ de véhicule et énergies multiple.&lt;/li&gt;
     <value>Logiciel Geckos</value>
   </data>
   <data name="GeckosTitle" xml:space="preserve">
+    <value>CDI Développeur .net/web fullstack</value>
+  </data>
+  <data name="SopraDate" xml:space="preserve">
+    <value>2013-2015 (1an 7 mois)</value>
+  </data>
+  <data name="SopraDescription" xml:space="preserve">
+    <value>&lt;ul&gt;
+&lt;li&gt;Projet au forfait de refonte du système d’information Bouygues Immobilier (projet Opera), intégration dans l’équipe finance (7 personnes)&lt;/li&gt;
+&lt;li&gt;Octobre – Decembre 2013 : Réalisation des POC d’interface graphique, montée en compétence sur le domaine métier finance. Lecture et analyse des specifications Frontend V0.&lt;/li&gt;
+&lt;li&gt;Decembre 2013 – Juin 2014 : Développement des spécifications Frontend du module Finance pour la version V0, responsable des développements Front et référent technique.&lt;/li&gt;
+&lt;li&gt;Juin – Novembre 2014 : Intégration à l’équipe de conception générale pour retour et amélioration continue du framework interne à l’application et diffusion des bonnes pratiques de développement. Etudes des spécifications V1 en préparation des développements.&lt;/li&gt; 
+&lt;/ul&gt;</value>
+  </data>
+  <data name="SopraSoftware" xml:space="preserve">
+    <value>Projet Opera</value>
+  </data>
+  <data name="SopraTitle" xml:space="preserve">
     <value>CDI Développeur .net/web fullstack</value>
   </data>
 </root>
