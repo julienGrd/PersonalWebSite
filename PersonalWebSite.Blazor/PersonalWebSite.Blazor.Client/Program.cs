@@ -16,6 +16,7 @@ builder.Services.AddCommon();
 
 var host = builder.Build();
 
-await host.Services.SetDefaultUICulture();
+CultureInfo.DefaultThreadCurrentCulture = CultureInfo.CurrentUICulture;
+CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.CurrentUICulture;
 
 await host.RunAsync();

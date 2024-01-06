@@ -10,11 +10,18 @@ namespace PersonalWebSite.Blazor.Client.Services
 {
     public class LanguageService
     {
-        IStringLocalizer<LanguageService> _l;
+        private readonly IStringLocalizer<LanguageService> _l;
+
+        public event EventHandler OnLanguageChanged;
 
         public LanguageService(IStringLocalizer<LanguageService> l)
         {
             _l = l;
+        }
+
+        public void Reload()
+        {
+            this.OnLanguageChanged?.Invoke(this, EventArgs.Empty);
         }
         public IEnumerable<Language> GetDefaults()
         {

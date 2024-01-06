@@ -1,6 +1,8 @@
-﻿<div class="name">
+﻿@inherits CustomBaseComponent
+@inject IStringLocalizer<CvTitle> L
+<div class="name">
     Julien Gourdon - Freelance
 </div>
 <div class="role">
-    Développeur .NET/Web Fullstack
+    @L["Title"]
 </div>

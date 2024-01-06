@@ -115,32 +115,34 @@
         }
     }
 
-    // protected override async Task OnAfterRenderAsync(bool firstRender)
-    // {
-    //     if (firstRender)
-    //     {
-    //         var result = await _localstorage.GetItemAsync<string>("currentcuture");
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var result = await _localstorage.GetItemAsync<string>("currentcuture");
 
-    //         CultureInfo culture;
-    //         if (result != null)
-    //             // 3.a. Set the selected Culture
-    //             culture = new CultureInfo(result);
-    //         else
-    //             culture = CultureInfo.CurrentUICulture;
+            CultureInfo culture;
+            if (result != null)
+                // 3.a. Set the selected Culture
+                culture = new CultureInfo(result);
+            else
+                culture = CultureInfo.CurrentUICulture;
 
-    //         CultureInfo.CurrentCulture.ClearCachedData();
+            CultureInfo.CurrentCulture.ClearCachedData();
 
-    //         // Set the cukture to application
-    //         // CultureInfo.CurrentCulture = culture;
-    //         CultureInfo.DefaultThreadCurrentCulture = culture;
-    //         CultureInfo.DefaultThreadCurrentUICulture = culture;
+            // Set the cukture to application
+            // CultureInfo.CurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
 
-    //         this.StateHasChanged();
-    //     }
+            _languageService.Reload();
+
+            this.StateHasChanged();
+        }
         
 
-    //     await base.OnAfterRenderAsync(firstRender);
-    // }
+        await base.OnAfterRenderAsync(firstRender);
+    }
     // protected void SetLanguage(Language l)
     // {
     //     //_languageService.SetLanguage(l);
