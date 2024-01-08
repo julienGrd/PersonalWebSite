@@ -13,7 +13,10 @@
         </a>
         
          <div class="d-flex flex-column ms-2">
-            <span class="title-menu">Julien Gourdon - Freelance</span>
+            <span class="title-menu d-flex">
+                <span>Julien Gourdon</span>
+                <span class="d-none d-sm-inline"> - Freelance</span>
+            </span>
             <span class="job">@L["JobTitle"]</span>
         </div>
     </div>
@@ -110,7 +113,8 @@
                 _localstorage.SetItemAsync("currentcuture", value.TwoLetterISOLanguageName);
 
                 // Load the Current URL
-                NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+                //NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+                ApplyLanguage(value);
             }
         }
     }
@@ -128,20 +132,25 @@
             else
                 culture = CultureInfo.CurrentUICulture;
 
-            CultureInfo.CurrentCulture.ClearCachedData();
-
-            // Set the cukture to application
-            // CultureInfo.CurrentCulture = culture;
-            CultureInfo.DefaultThreadCurrentCulture = culture;
-            CultureInfo.DefaultThreadCurrentUICulture = culture;
-
-            _languageService.Reload();
-
-            this.StateHasChanged();
+            ApplyLanguage(culture);
         }
-        
+
 
         await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private void ApplyLanguage(CultureInfo pCulture)
+    {
+        CultureInfo.CurrentCulture.ClearCachedData();
+
+        // Set the cukture to application
+        // CultureInfo.CurrentCulture = culture;
+        CultureInfo.DefaultThreadCurrentCulture = pCulture;
+        CultureInfo.DefaultThreadCurrentUICulture = pCulture;
+
+        _languageService.Reload();
+
+        this.StateHasChanged();
     }
     // protected void SetLanguage(Language l)
     // {
