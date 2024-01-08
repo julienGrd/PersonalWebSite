@@ -3,6 +3,7 @@
 @inject LanguageService _languageService
 @inject NavigationManager NavManager
 @inject Blazored.LocalStorage.ILocalStorageService _localstorage
+@inject IJSRuntime jsRuntime
 @using System.Globalization;
 
 <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
@@ -149,6 +150,8 @@
         CultureInfo.DefaultThreadCurrentUICulture = pCulture;
 
         _languageService.Reload();
+
+        jsRuntime.InvokeVoidAsync("setTitle", $"CV Julien Gourdon {System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}");
 
         this.StateHasChanged();
     }

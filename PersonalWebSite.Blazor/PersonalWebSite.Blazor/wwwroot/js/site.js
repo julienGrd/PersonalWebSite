@@ -8,6 +8,8 @@
     });
 }
 
+setTitle = (title) => { document.title = title; };
+
 //let fileHandle;
 //async function testFileSystem() {
 //    //1 on enregistre un nouveau fichier
