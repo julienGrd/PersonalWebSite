@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="compilerconfig.json" />
     <Content Remove="wwwroot\css\bootstrap\scss\bootstrap-grid.scss" />
     <Content Remove="wwwroot\css\bootstrap\scss\bootstrap-reboot.scss" />
     <Content Remove="wwwroot\css\bootstrap\scss\bootstrap-utilities.scss" />
@@ -100,6 +101,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="compilerconfig.json" />
     <None Include="wwwroot\css\bootstrap\scss\bootstrap-grid.scss" />
     <None Include="wwwroot\css\bootstrap\scss\bootstrap-reboot.scss" />
     <None Include="wwwroot\css\bootstrap\scss\bootstrap-utilities.scss" />

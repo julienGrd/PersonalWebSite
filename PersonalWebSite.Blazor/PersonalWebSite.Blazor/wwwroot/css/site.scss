@@ -33,6 +33,9 @@ body {
             clear: both;
             page-break-after: always;
         }
+
+        .timeline__event__content {
+        }
     }
 
     app {
@@ -205,6 +208,10 @@ body {
 
                     .timeline__event__description {
                         font-size: 11px;
+                    }
+
+                    * {
+                        box-shadow: none !important;
                     }
                 }
 

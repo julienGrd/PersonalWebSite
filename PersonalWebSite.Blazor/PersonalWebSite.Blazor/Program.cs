@@ -2,10 +2,15 @@ using Microsoft.Extensions.Hosting;
 using PersonalWebSite.Blazor.Client.Pages;
 using PersonalWebSite.Blazor.Client.Services;
 using PersonalWebSite.Blazor.Components;
-using PersonalWebSite.Blazor.Client.Model;
-using System.Globalization;
+//using PersonalWebSite.Blazor.Client.Model;
+//using System.Globalization;
+//using Microsoft.AspNetCore.Components.Web;
+//using PersonalWebSite.Blazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//builder.Services.AddScoped<HtmlRenderer>();
+//builder.Services.AddScoped<BlazorRenderer>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -39,6 +44,8 @@ app.UseStaticFiles();
 //app.UseRouting();
 
 app.UseAntiforgery();
+
+//app.MapControllers();
 
 
 //var supportedCultures = new[] { "fr", "en" };

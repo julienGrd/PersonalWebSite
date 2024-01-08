@@ -12145,6 +12145,9 @@ body main .cv-container .cv-content.printable-content .timeline__event__main__ti
 body main .cv-container .cv-content.printable-content .timeline__event__description {
   font-size: 11px;
 }
+body main .cv-container .cv-content.printable-content * {
+  box-shadow: none !important;
+}
 body main .cv-container .cv-content.display-content {
   flex-direction: column;
 }
