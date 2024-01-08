@@ -42,10 +42,11 @@ namespace PersonalWebSite.Blazor.Client.Services
 
         public Language GetCurrentLanguage()
         {
-            var d = GetDefaults().FirstOrDefault(l => l.CultureInfo.TwoLetterISOLanguageName.Equals(CultureInfo.CurrentUICulture.TwoLetterISOLanguageName, StringComparison.InvariantCultureIgnoreCase));
+            var d = GetDefaults().FirstOrDefault(l => l.CultureInfo.TwoLetterISOLanguageName.Equals(DefaultCulture.TwoLetterISOLanguageName, StringComparison.InvariantCultureIgnoreCase));
             return d ?? GetDefaults().First();
         }
 
+        private CultureInfo DefaultCulture => CultureInfo.DefaultThreadCurrentUICulture ?? CultureInfo.CurrentUICulture;
 
         //public void SetLanguage(Language l)
         //{

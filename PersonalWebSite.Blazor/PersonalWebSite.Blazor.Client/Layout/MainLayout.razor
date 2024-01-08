@@ -111,7 +111,7 @@
             if (CultureInfo.CurrentCulture != value)
             {
                 // Set the culture in LocalStorage
-                _localstorage.SetItemAsync("currentcuture", value.TwoLetterISOLanguageName);
+                _localstorage.SetItemAsync("currentculture", value.TwoLetterISOLanguageName);
 
                 // Load the Current URL
                 //NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
@@ -124,7 +124,7 @@
     {
         if (firstRender)
         {
-            var result = await _localstorage.GetItemAsync<string>("currentcuture");
+            var result = await _localstorage.GetItemAsync<string>("currentculture");
 
             CultureInfo culture;
             if (result != null)
@@ -150,8 +150,6 @@
         CultureInfo.DefaultThreadCurrentUICulture = pCulture;
 
         _languageService.Reload();
-
-        jsRuntime.InvokeVoidAsync("setTitle", $"CV Julien Gourdon {System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}");
 
         this.StateHasChanged();
     }
