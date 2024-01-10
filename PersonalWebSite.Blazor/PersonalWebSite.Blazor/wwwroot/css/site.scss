@@ -175,10 +175,11 @@ body {
                         /*display: flex;*/
                         padding: 8px;
                         flex-direction: column;
-                        max-width: 18rem;
+                        max-width: 19.5rem;
 
                         .photo-with-info {
                             margin-left: 6px;
+                            flex-direction: column;
                         }
 
                         .name {
@@ -190,7 +191,8 @@ body {
                         }
 
                         .resume {
-                            font-size: 12px;
+                            /*font-size: 12px;*/
+                            font-size: 13px;
                         }
                     }
 
@@ -309,7 +311,7 @@ body {
                 }
 
                 .resume {
-                    font-size: 13px;
+                    font-size: 14px;
                     text-align: justify;
                     padding-top: 5px;
                 }
