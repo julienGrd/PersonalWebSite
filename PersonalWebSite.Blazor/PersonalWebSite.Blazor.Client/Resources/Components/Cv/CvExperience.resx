@@ -184,13 +184,13 @@ ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/
     <value>Permanent contract, .net/web Software Developper fullstack</value>
   </data>
   <data name="GeckosDate" xml:space="preserve">
-    <value>2019-2023 (5 years)</value>
+    <value>2019-2024 (6 years)</value>
   </data>
   <data name="GeckosDescription" xml:space="preserve">
     <value>&lt;ul&gt;
      &lt;li&gt;In charge of the technical migration of the software GECKOS, a management software specialized in the medical field (CMPP/CESSAD).&lt;/li&gt;
      &lt;li&gt;Stack when I arrived: Visual studio 2010, .net framework 4.0, Silverlight, Wcf, Entity Framework 5&lt;/li&gt;
-     &lt;li&gt;Stack when I left: Visual studio 2022, .net 8, Blazor Server/Web assembly, CSS/SASS, REST API, Entity Framework Core 8&lt;/li&gt;
+     &lt;li&gt;Actual stack: Visual studio 2022, .net 8, Blazor Server/Web assembly, CSS/SASS, REST API, Entity Framework Core 8&lt;/li&gt;
      &lt;li&gt;Work in complete autonomy and remotely, in permanent contact with the company manager.&lt;/li&gt;
      &lt;li&gt;Responsibilities: analysis and understanding of the existing system, definition of the architecture, implementation of quality standards, improvement of ergonomy, development of the entire application with the latest technologies in the web and .NET world&lt;/li&gt;
      &lt;li&gt;2019: Rewriting the Silverlight front in blazor Server/Webassembly, synchronization of C# code between applications to allow parallel use of the two applications with the same code.&lt;/li&gt;
