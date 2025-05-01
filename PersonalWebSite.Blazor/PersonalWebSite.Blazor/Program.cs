@@ -38,12 +38,14 @@ else
 
 app.UseHttpsRedirection();
 
-app.UseStaticFiles();
+//app.UseStaticFiles();
 
 
 //app.UseRouting();
 
 app.UseAntiforgery();
+
+app.MapStaticAssets();
 
 //app.MapControllers();
 
