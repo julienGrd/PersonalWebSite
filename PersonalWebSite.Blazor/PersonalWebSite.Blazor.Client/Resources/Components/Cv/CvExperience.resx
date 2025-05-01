@@ -184,7 +184,7 @@ ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/
     <value>Permanent contract, .net/web Software Developper fullstack</value>
   </data>
   <data name="GeckosDate" xml:space="preserve">
-    <value>2019-2024 (6 years)</value>
+    <value>2019-2025 (7 years)</value>
   </data>
   <data name="GeckosDescription" xml:space="preserve">
     <value>&lt;ul&gt;
@@ -198,6 +198,8 @@ ergonomy of planning selection. New design and ergonomy of purchase funnel.&lt;/
      &lt;li&gt;2021: Progressive attempt to port the backend to .NET 7. Various functional improvements (electronic signatures, internal messaging/email system through the application, business alert systems)&lt;/li&gt;
      &lt;li&gt;2022: Deep rewrite of the business and technical part to certify the Geckos software in SEGUR referencing (https://esante.gouv.fr/segur).&lt;/li&gt;
      &lt;li&gt;2023: Finalization of porting the entire code, removal of the old application and its support, widespread deployment, gradual improvement of the old code&lt;/li&gt;
+  &lt;li&gt;2024: evolutive and corrective application management, SEGUR Wave 2 preparation, preparation of the architecture for a SAAS offering&lt;/li&gt;
+  &lt;li&gt;2025: SEGUR Wave 2 developments, support of the new manager in the overhaul of the company's processes and tools&lt;/li&gt;
  &lt;/ul&gt;</value>
   </data>
   <data name="GeckosSoftware" xml:space="preserve">

@@ -183,13 +183,13 @@ de véhicule et énergies multiple.&lt;/li&gt;
     <value>CDI Développeur .net/web fullstack</value>
   </data>
   <data name="GeckosDate" xml:space="preserve">
-    <value>2019-2024 (6 ans)</value>
+    <value>2019-2025 (7 ans)</value>
   </data>
   <data name="GeckosDescription" xml:space="preserve">
     <value>&lt;ul&gt;
      &lt;li&gt;En charge de la refonte technique du logiciel GECKOS, progiciel de gestion spécialisé dans le domaine médical (CMPP/CESSAD).&lt;/li&gt;
      &lt;li&gt;Stack à mon arrivé : Visual studio 2010, .net framework 4.0, Silverlight, Wcf, Entity Framework 5&lt;/li&gt;
-     &lt;li&gt;Stack actuelle : Visual studio 2022, .net 8, Blazor Server/Web assembly, CSS/SASS, API REST, Entity Framework Core 8&lt;/li&gt;
+     &lt;li&gt;Stack actuelle : Visual studio 2022, .NET 9, Blazor Server/Web assembly, CSS/SASS, API REST, Entity Framework Core 9&lt;/li&gt;
      &lt;li&gt;Travail en totale autonomie et à distance, en lien permanent avec le dirigeant de la société.&lt;/li&gt;
      &lt;li&gt;Responsabilités : analyse et compréhension de l'existant, définition de l'architecture, mise en place des normes de qualités, amélioration de l'ergonomie, développement de l'intégralité de l'application avec les dernières avancées dans le monde web et .NET&lt;/li&gt;
      &lt;li&gt;2019 : Réécriture du front Silverlight en blazor Server/Webassembly, synchronisation du code c# entre les applications pour permettre une utilisation en parallèle des deux application sur le même code.&lt;/li&gt;
@@ -197,6 +197,8 @@ de véhicule et énergies multiple.&lt;/li&gt;
      &lt;li&gt;2021 : Tentative progressive de porter le backend en .NET 7. Améliorations fonctionnelles diverses (signatures électronique, système de messagerie interne/mail à travers l'application, systèmes d'alertes métiers)&lt;/li&gt;
      &lt;li&gt;2022 : Réécriture profonde de la partie métier et technique pour certifier le logiciel Geckos dans le référencement SEGUR (https://esante.gouv.fr/segur).&lt;/li&gt;
      &lt;li&gt;2023 : Finalisation du portage de l'intégralité du code, abandon de l'ancienne application et de son support, déploiement généralisé, amélioration progressive de l'ancien code&lt;/li&gt;
+  &lt;li&gt;2024 : TMA évolutive et corrective, Préparation SEGUR Vague 2, préparation de l'architecture à une offre de type SAAS&lt;/li&gt;
+  &lt;li&gt;2025 : Développements SEGUR Vague 2, accompagnement du nouveau dirigeant dans la refonte des processus et des outils de l'entreprise&lt;/li&gt;
  &lt;/ul&gt;</value>
   </data>
   <data name="GeckosSoftware" xml:space="preserve">
