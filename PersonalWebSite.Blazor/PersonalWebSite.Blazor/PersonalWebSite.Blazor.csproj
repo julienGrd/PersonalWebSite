@@ -97,7 +97,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PersonalWebSite.Blazor.Client\PersonalWebSite.Blazor.Client.csproj" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.7" />
   </ItemGroup>
 
   <ItemGroup>

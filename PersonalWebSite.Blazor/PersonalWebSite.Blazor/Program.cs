@@ -23,6 +23,11 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddCommon();
 
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Limits.MaxRequestBodySize = null; // Disable request body size limit   
+});
+
 var app = builder.Build();
 
 app.UseForwardedHeaders(new ForwardedHeadersOptions
@@ -44,7 +49,7 @@ else
 
 //app.UseHttpsRedirection();
 
-//app.UseStaticFiles();
+app.UseStaticFiles();
 
 
 //app.UseRouting();
